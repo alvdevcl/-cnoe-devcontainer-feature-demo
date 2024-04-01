@@ -1,0 +1,34 @@
+{
+  "features": {
+    "ghcr.io/aatchison/features/cnoe-cli:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/aatchison/features/cnoe-cli@sha256:81410f56add646139f434769a66c407cd325c3d5bb4e250ce004d9824cadc305",
+      "integrity": "sha256:81410f56add646139f434769a66c407cd325c3d5bb4e250ce004d9824cadc305"
+    },
+    "ghcr.io/aatchison/features/idpbuilder:2": {
+      "version": "2.0.0",
+      "resolved": "ghcr.io/aatchison/features/idpbuilder@sha256:c2023824ea328b8b34b4324e0c574d5d0bed057997ecaecda452968fda91a99b",
+      "integrity": "sha256:c2023824ea328b8b34b4324e0c574d5d0bed057997ecaecda452968fda91a99b"
+    },
+    "ghcr.io/devcontainers-contrib/features/kind:1": {
+      "version": "1.0.14",
+      "resolved": "ghcr.io/devcontainers-contrib/features/kind@sha256:6880bd531414094304615159e5ec85a075047dc99f3d81f24e755bc3e9e4b996",
+      "integrity": "sha256:6880bd531414094304615159e5ec85a075047dc99f3d81f24e755bc3e9e4b996"
+    },
+    "ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {
+      "version": "2.0.14",
+      "resolved": "ghcr.io/devcontainers-contrib/features/kubectl-asdf@sha256:35142d507ead59558f8a9d5649a2bf52739c376a118930ecddb82cad75c9bc40",
+      "integrity": "sha256:35142d507ead59558f8a9d5649a2bf52739c376a118930ecddb82cad75c9bc40"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "2.10.2",
+      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:23ae11a86089da5f0b98a6edd603f91831802b7f2d5ef1e104e1b94a3beb546c",
+      "integrity": "sha256:23ae11a86089da5f0b98a6edd603f91831802b7f2d5ef1e104e1b94a3beb546c"
+    },
+    "ghcr.io/rio/features/vcluster:1": {
+      "version": "1.0.1",
+      "resolved": "ghcr.io/rio/features/vcluster@sha256:74364556bba11af58b3ac0afd8cf39eee3e7ecddb48c61e7bfcabd6eaa6342b6",
+      "integrity": "sha256:74364556bba11af58b3ac0afd8cf39eee3e7ecddb48c61e7bfcabd6eaa6342b6"
+    }
+  }
+}

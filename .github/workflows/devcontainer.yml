@@ -1,5 +1,5 @@
 name: devcontainer-ci-test
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: Devcontainer/ci demo workflow
 on: [push]
 jobs:
   ci-test:

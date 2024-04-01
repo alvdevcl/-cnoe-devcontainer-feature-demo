@@ -13,8 +13,11 @@ devpod provider add kubernetes
 devpod up https://github.com/aatchison/cnoe-devcontainer-feature-demo --ide none --provider kubernetes
 
 # run examples
-# ssh idpbuilder.devpod -C "./idpbuilder-example.sh"
-ssh idpbuilder.devpod -C "./cnoe-cli-example.sh"
+ssh cnoe-devcontainer-feature-demo -C "./idpbuilder-example.sh"
+ssh cnoe-devcontainer-feature-demo.devpod -C "./cnoe-cli-example.sh"
 
+sleep 10
 
 devpod delete idpbuilder
+
+kind delete clusters kind

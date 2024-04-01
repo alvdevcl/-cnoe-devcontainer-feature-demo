@@ -1,0 +1,25 @@
+name: devcontainer-ci-test
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  ci-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker/login-action@v2 
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/aatchison/cnoe-devcontainer-feature-demo/example-devcontainer-ci
+          cacheFrom: ghcr.io/aatchison/cnoe-devcontainer-feature-demo/example-devcontainer-ci
+          push: always
+          runCmd: ./idpbuilder-example.sh
+      - uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/aatchison/cnoe-devcontainer-feature-demo/example-devcontainer-ci
+          cacheFrom: ghcr.io/aatchison/cnoe-devcontainer-feature-demo/example-devcontainer-ci
+          push: always
+          runCmd: ./cnoe-cli-example.sh
